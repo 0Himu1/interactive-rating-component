@@ -1,6 +1,7 @@
 import React from 'react';
 import Numberbox from './Numberbox';
 import '../style/Rattingpage.css';
+import SubmitButton from './SubmitButton';
 
 export default function Rettingpage() {
   return (
@@ -19,6 +20,7 @@ export default function Rettingpage() {
         appreciated to help us improve our offering!
       </p>
       <Numberbox />
+      <SubmitButton />
     </>
   );
 }
