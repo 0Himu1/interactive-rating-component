@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import Numberbox from './Numberbox';
 import '../style/Rattingpage.css';
 import SubmitButton from './SubmitButton';
 
-export default function Rettingpage() {
+export default function Rettingpage({ retting, setRetting }) {
   return (
     <>
       <div className="star">
@@ -19,8 +20,8 @@ export default function Rettingpage() {
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
       </p>
-      <Numberbox />
-      <SubmitButton />
+      <Numberbox retting={retting} setRetting={setRetting} />
+      <SubmitButton retting={retting} />
     </>
   );
 }

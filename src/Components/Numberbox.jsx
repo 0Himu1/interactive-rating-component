@@ -1,16 +1,10 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
-import React, { useState } from 'react';
+import React, { } from 'react';
 import '../style/Numberbox.css';
 import Number from './Number';
 
-export default function Numberbox() {
-  const state = {
-    isClicked: false,
-    rettedNumber: null,
-  };
-
-  const [retting, setRetting] = useState(state);
-
+export default function Numberbox({ retting, setRetting }) {
   const handleClick = (ratting) => {
     const updatedState = {
       isClicked: true,

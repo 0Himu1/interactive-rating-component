@@ -13,7 +13,9 @@ button {
 	border: none;
 	margin: 15px 0px;
 }
-
+a {
+	text-decoration: none;
+}
 button:hover {
 	background: #fff;
 	color: hsl(25, 97%, 53%);
